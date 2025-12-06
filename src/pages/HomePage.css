@@ -1,0 +1,166 @@
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 2rem;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 2rem 0;
+  color: #333;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin: 0;
+}
+
+.auth-section,
+.authenticated-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.card {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  color: #333;
+  margin-top: 0;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.card h3 {
+  color: #333;
+  margin-top: 0;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.card ul,
+.card ol {
+  color: #666;
+  line-height: 1.8;
+}
+
+.card li {
+  margin-bottom: 0.75rem;
+}
+
+.welcome-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.welcome-card h2 {
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.welcome-card p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.features-card ul {
+  color: #666;
+}
+
+.features-card ul li {
+  font-weight: 500;
+}
+
+.info-card {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+}
+
+.info-item {
+  display: flex;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item .label {
+  font-weight: 600;
+  width: 150px;
+  color: #555;
+}
+
+.info-item .value {
+  flex: 1;
+  color: #333;
+  word-break: break-word;
+}
+
+.info-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.card code {
+  background-color: #f0f0f0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  font-family: "Courier New", monospace;
+  color: #e83e8c;
+}
+
+.card a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .info-section {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
