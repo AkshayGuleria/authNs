@@ -1,4 +1,5 @@
 import { useMsal } from "@azure/msal-react";
+import { msalInstance } from "../config/msalConfig";
 import "./NavBar.css";
 
 export const NavBar = () => {
@@ -6,14 +7,21 @@ export const NavBar = () => {
   const isAuthenticated = accounts.length > 0;
 
   const handleLogin = () => {
-    instance.loginPopup({
+    instance.ssoSilent({
       scopes: ["User.Read"],
-      prompt: "select_account",
+      loginHint: "",
+    }).catch(() => {
+      instance.loginPopup({
+        scopes: ["User.Read"],
+        prompt: "select_account",
+      });
     });
   };
 
   const handleLogout = () => {
-    instance.logout();
+    instance.logout({
+      postLogoutRedirectUri: msalInstance.getConfiguration().auth.postLogoutRedirectUri,
+    });
   };
 
   return (
