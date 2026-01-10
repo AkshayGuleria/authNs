@@ -7,9 +7,13 @@ A comprehensive, production-ready React application demonstrating Microsoft Entr
 All detailed documentation has been organized in the **`docs/`** folder for easy navigation:
 
 - **[Quick start guide](#quick-start)**
+- **[docs/SETUP_VERIFICATION.md](./docs/SETUP_VERIFICATION.md)** - Verify dependencies and builds
 - **[docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md)** - Visual diagrams and system design
 - **[docs/REFERENCE.md](./docs/REFERENCE.md)** - Code examples & troubleshooting
 - **[docs/PROJECT_SUMMARY.md](./docs/PROJECT_SUMMARY.md)** - Project overview
+- **[docs/SERVICE_TO_SERVICE.md](./docs/SERVICE_TO_SERVICE.md)** - Backend S2S authentication guide
+- **[docs/BACKEND_SETUP.md](./docs/BACKEND_SETUP.md)** - Backend installation & configuration
+- **[docs/S2S_QUICK_REFERENCE.md](./docs/S2S_QUICK_REFERENCE.md)** - Quick reference & testing
 
 ---
 

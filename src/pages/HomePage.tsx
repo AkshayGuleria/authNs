@@ -2,6 +2,7 @@ import { useMsal } from "@azure/msal-react";
 import { useEffect } from "react";
 import { ProtectedRoute } from "../components/ProtectedRoute";
 import { UserProfile } from "../components/UserProfile";
+import { BackendAPI } from "../components/BackendAPI";
 import "./HomePage.css";
 
 export const HomePage = () => {
@@ -51,11 +52,18 @@ export const HomePage = () => {
               <li>✅ Protected routes and components</li>
               <li>✅ Token acquisition and renewal</li>
               <li>✅ Secure API calls to Microsoft Graph</li>
+              <li>✅ Service-to-Service (S2S) authentication</li>
             </ul>
           </div>           
           {isAuthenticated && (
             <ProtectedRoute>
               <UserProfile />
+            </ProtectedRoute>
+          )}
+          
+          {isAuthenticated && (
+            <ProtectedRoute>
+              <BackendAPI />
             </ProtectedRoute>
           )}
         </div>
